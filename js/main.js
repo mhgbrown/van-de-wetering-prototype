@@ -6,10 +6,19 @@ $(function(){
     itemSelector: '.posts-list > li'
   });
 
-  $('.publication').on('click', function(even) {
+  var colors = ['#0B24FB', '#F1F100', '#E10F21', '#F29425', '#9C2080', '#44A33C'];
+  $('.publication')
+  .each(function(i) {
+    var $this = $(this);
+    $this.css({
+      'background-color': colors[i]
+    });
+  })
+  .on('click', function(even) {
     var $this = $(this);
     $this.toggleClass('reveal');
   });
+
 
   $('a[href*="#"]:not([href="#"])').click(function() {
     var target = $(this.hash);
