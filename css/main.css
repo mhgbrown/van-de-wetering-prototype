@@ -1,6 +1,6 @@
   @font-face {
     font-family: "Wetering_Regular_One";
-    src: url("fonts/Wetering_Regular_One.otf") format('opentype');
+    src: url("../fonts/Wetering_Regular_One.otf") format('opentype');
   }
 
 * {
