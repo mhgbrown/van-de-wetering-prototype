@@ -1,9 +1,24 @@
 $(function(){
-  $('.posts-list').masonry({
+  var masonryOptions = {
     gutter: 70,
     transitionDuration: '0s',
     fitWidth: true,
     itemSelector: '.posts-list > li'
+  };
+
+  var $grid = $('.posts-list').masonry(masonryOptions);
+
+  $(window).on('resize', function(event) {
+      var $win = $(this);
+      if ($win.width() <= 767) {
+        if($grid.data('masonry')) {
+          $grid.masonry('destroy')
+        }
+      } else {
+        if(!$grid.data('masonry')) {
+          $grid.masonry(masonryOptions);
+        }
+      }
   });
 
   var colors = ['#0B24FB', '#F1F100', '#E10F21', '#F29425', '#9C2080', '#44A33C'];
@@ -30,4 +45,6 @@ $(function(){
       return false;
     }
   });
+
+  $(window).trigger('resize');
 });
