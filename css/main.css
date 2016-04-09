@@ -150,6 +150,7 @@ img {
 }
 
 .white {
+  display: none;
   background: white;
   height: 17px;
   position: absolute;
@@ -443,6 +444,10 @@ img {
 @media (max-width: 767px) {
   .primary-nav ul {
     display: none;
+  }
+
+  .white {
+    display: block;
   }
 
   .toggle-menu,
