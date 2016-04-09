@@ -154,7 +154,8 @@ img {
   height: 17px;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  left: -20px;
+  width: 150%;
   z-index: 2;
 }
 
@@ -164,8 +165,8 @@ img {
   background: white;
   right: 0;
   top: 49px;
-  text-align: right;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 15px 20px;
+  width: 100%;
   box-shadow: -2px 2px 20px 0 #575756;
 }
 
