@@ -285,7 +285,7 @@ img {
   background-color: #BBBBBB;
   color: white;
   text-shadow: 3px 3px 6px #575756;
-  padding: 45px 20px 0 20px;
+  padding: 40px 20px 40px 20px;
 }
 
 .projects table {
@@ -297,8 +297,17 @@ img {
 
 .projects table tr td {
   vertical-align: top;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   padding-right: 35px;
+
+}
+
+.projects table tr td.divider {
+  padding: 0;
+  background: white;
+  height: 2px;
+  box-shadow: 3px 3px 6px #575756;
 }
 
 .projects table tr td:nth-child(1) {
@@ -455,6 +464,10 @@ img {
     padding: 0;
     width: 100%;
   }
+
+   .contact .address {
+    margin-bottom: 1em;
+   }
 
   .projects {
     font-size: 1em;
