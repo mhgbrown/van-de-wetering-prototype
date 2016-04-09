@@ -109,7 +109,6 @@ img {
 
 .primary-content {
   padding-top: 90px;
-  /*padding: 0 20px 0 20px;*/
 }
 
 .toggle-menu {
@@ -149,26 +148,13 @@ img {
   top: 31px;
 }
 
-.white {
-  display: none;
-  background: white;
-  height: 17px;
-  position: absolute;
-  bottom: 0;
-  left: -20px;
-  width: 150%;
-  z-index: 2;
-}
-
 .toggle-menu:checked ~ ul {
   display: block;
-  position: absolute;
   background: white;
   right: 0;
   top: 49px;
-  padding: 0 20px 15px 20px;
+  padding-bottom: 20px;
   width: 100%;
-  box-shadow: -2px 2px 20px 0 #575756;
 }
 
 .toggle-menu:checked ~ ul li {
@@ -442,12 +428,13 @@ img {
 
 /* single column */
 @media (max-width: 767px) {
-  .primary-nav ul {
-    display: none;
+  .primary-header {
+    height: auto;
+    min-height: 50px;
   }
 
-  .white {
-    display: block;
+  .primary-nav ul {
+    display: none;
   }
 
   .toggle-menu,
