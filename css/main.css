@@ -437,6 +437,10 @@ img {
 
 /* single column */
 @media (max-width: 767px) {
+  a:hover {
+    border-bottom: none;
+  }
+
   .primary-header {
     height: auto;
     min-height: 50px;
